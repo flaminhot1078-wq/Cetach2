@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portal de listas de utiles escolares por grado de CETACH No. 2." />
+  <title>CETACH No. 2 | Listas de Utiles Escolares</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img src="assets/logo.png" alt="Logo CETACH No. 2" class="brand-logo" />
+        <span class="brand-text">CETACH No. 2</span>
+      </a>
+      <nav class="menu">
+        <a href="#grados">Grados</a>
+        <a href="#sobre">Sobre el colegio</a>
+        <a href="#descargas">Descargas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Centro de Estudios Técnicos y Avanzados de Chimaltenango No. 2</p>
+          <h1>Listas de utiles escolares por grado</h1>
+          <p class="lead">
+            Descarga de forma rapida los PDF con materiales sugeridos para
+            1ro a 5to primaria en un sitio claro, moderno y adaptable a celular.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#grados">Ver grados</a>
+            <a class="btn btn-secondary" href="#sobre">Conocer mas</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumen institucional">
+          <h2>Resumen institucional</h2>
+          <ul>
+            <li><strong>Ubicacion:</strong> Chimaltenango, Km. 55.10</li>
+            <li><strong>Cobertura:</strong> Desde preprimaria hasta diversificado</li>
+            <li><strong>Contacto:</strong> 7849 1332</li>
+            <li><strong>Correo:</strong> infoc2@cetach2.edu.gt</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="grados" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Descargas</p>
+          <h2>Selecciona un grado</h2>
+          <p>Elige el grado correspondiente para acceder a su lista de utiles escolares.</p>
+        </div>
+
+        <div class="grades-grid">
+          <button class="grade-card" data-file="pdfs/1ro_primaria.pdf">
+            <span class="grade-number">1</span>
+            <span class="grade-title">1ro Primaria</span>
+            <span class="grade-desc">Material basico de inicio</span>
+          </button>
+
+          <button class="grade-card" data-file="pdfs/2do_primaria.pdf">
+            <span class="grade-number">2</span>
+            <span class="grade-title">2do Primaria</span>
+            <span class="grade-desc">Refuerzo de lectoescritura</span>
+          </button>
+
+          <button class="grade-card" data-file="pdfs/3ro_primaria.pdf">
+            <span class="grade-number">3</span>
+            <span class="grade-title">3ro Primaria</span>
+            <span class="grade-desc">Mayor autonomia y orden</span>
+          </button>
+
+          <button class="grade-card" data-file="pdfs/4to_primaria.pdf">
+            <span class="grade-number">4</span>
+            <span class="grade-title">4to Primaria</span>
+            <span class="grade-desc">Material academico ampliado</span>
+          </button>
+
+          <button class="grade-card" data-file="pdfs/5to_primaria.pdf">
+            <span class="grade-number">5</span>
+            <span class="grade-title">5to Primaria</span>
+            <span class="grade-desc">Preparacion para proyectos</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section alt">
+      <div class="container info-grid">
+        <div>
+          <p class="eyebrow">Sobre el colegio</p>
+          <h2>Informacion escolar centralizada</h2>
+          <p>
+            Este portal permite consultar y descargar las listas de utiles escolares por grado de forma rapida,
+            ordenada y accesible desde cualquier dispositivo.
+          </p>
+          <p>
+            La interfaz presenta una navegacion clara, tarjetas interactivas y acceso directo a los archivos PDF
+            correspondientes a cada nivel.
+          </p>
+        </div>
+        <div class="feature-list">
+          <article class="feature-item">
+            <h3>Responsive</h3>
+            <p>Se adapta a computadora, tablet y celular con grid flexible y botones grandes.</p>
+          </article>
+          <article class="feature-item">
+            <h3>Descarga inmediata</h3>
+            <p>Accede rapidamente al documento correspondiente para cada grado.</p>
+          </article>
+          <article class="feature-item">
+            <h3>Acceso organizado</h3>
+            <p>La informacion se presenta de forma clara para una consulta rapida y sencilla.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="descargas" class="section">
+      <div class="container download-box">
+        <h2>Descarga directa</h2>
+        <p>Selecciona el grado correspondiente y accede de inmediato a la lista de utiles escolares en formato PDF.</p>
+        <a class="btn btn-primary" href="pdfs/1ro_primaria.pdf" download>Descargar 1ro Primaria</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <img src="assets/logo.png" alt="Logo institucional CETACH No. 2" class="footer-logo" />
+      <p>Centro de Estudios Técnicos y Avanzados de Chimaltenango No. 2</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
